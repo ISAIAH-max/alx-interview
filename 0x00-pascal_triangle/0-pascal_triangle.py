@@ -16,5 +16,5 @@ def pascal_triangle(n):
     y = [0]
     for x in range(n):
         pascal.append(topRow)
-        topRow=[left+right for left,right in zip(topRow+y, y+topRow)]
+        topRow = [left+right for left, right in zip(topRow+y, y+topRow)]
     return pascal
